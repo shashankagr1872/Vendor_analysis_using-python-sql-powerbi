@@ -3,7 +3,7 @@ Evaluated vendor efficiency and profitability to drive data-backed purchasing an
 
 # Overview
 This project analyzes vendor performance and retail inventory dynamics to generate strategic insights for purchasing, pricing, and inventory optimization. A full data pipeline was implemented using SQL for ETL, Python for statistical analysis, and Power BI for interactive visualization.
-#Business Problem
+# Business Problem
 Effective inventory and sales management are critical in the retail sector. This project aims to:
 
 Identify underperforming brands needing pricing or promotional adjustments
@@ -12,13 +12,13 @@ Analyze the cost-benefit of bulk purchasing
 Investigate inventory turnover inefficiencies
 Statistically validate differences in vendor profitability
 
-#Tools & Technologies
+# Tools & Technologies
 SQL (Common Table Expressions, Joins, Filtering)
 Python (Pandas, Matplotlib, Seaborn, SciPy)
 Power BI (Interactive Visualizations)
 GitHub
 
-#Data Cleaning & Preparation
+# Data Cleaning & Preparation
 Removed transactions with:
 Gross Profit ≤ 0
 Profit Margin ≤ 0
@@ -27,7 +27,6 @@ Created summary tables with vendor-level metrics
 Converted data types, handled outliers, merged lookup tables
 #Exploratory Data Analysis (EDA)
 Negative or Zero Values Detected:
-
 Gross Profit: Min -52,002.78 (loss-making sales)
 Profit Margin: Min -∞ (sales at zero or below cost)
 Unsold Inventory: Indicating slow-moving stock
@@ -41,7 +40,7 @@ Weak between Purchase Price & Profit
 Strong between Purchase Qty & Sales Qty (0.999)
 Negative between Profit Margin & Sales Price (-0.179)
 
-#Research Questions & Key Findings
+# Research Questions & Key Findings
 Brands for Promotions: 198 brands with low sales but high profit margins
 Top Vendors: Top 10 vendors = 65.69% of purchases → risk of over-reliance
 Bulk Purchasing Impact: 72% cost savings per unit in large orders
